@@ -14,7 +14,7 @@ library(FactoMineR)
 library(factoextra)
 library(ggbiplot)
 library(conflicted)
-library("corrplot")
+library(corrplot)
 
 # Retirar a duplicidade de algumas funções
 conflict_prefer('rename', 'dplyr')
@@ -27,7 +27,7 @@ tab_mun <- read.xlsx('Muns_index.xlsx')
 # Carregar a base de produtos
 tab_product <- read.xlsx('Products_index.xlsx')
 
-# Faremos a análise de componentes principais para os produtos e municípios.
+# Faremos a análise de componentes principais para os produtos e municípios
 
 ## Produtos:
 
@@ -78,7 +78,7 @@ ggbiplot(acp_product) +
                                  "#D3D3D3"))
 dev.off()
 
-# Gráfico dos Autovalores
+# Gráfico dos autovalores
 tiff('Eigenvalue_products.png', units="in", width=8, height=6, res=300)
 fviz_eig(acp_product, choice = 'eigenvalue', addlabels = T, linecolor = '#A52A2A',
          main = 'PCA - Products', geom = 'line', hjust = -0.1) +
@@ -98,7 +98,7 @@ corrplot(var_product$cos2, is.corr = FALSE, method = "circle", tl.col = "black",
          col=colorRampPalette(c("white", "red", "dark red"))(200))
 dev.off()
 
-# Da mesma forma, faremos para os municípios.
+# Da mesma forma, faremos para os municípios
 
 # Municípios:
 

@@ -114,7 +114,7 @@ base_trabalho <- TabAll %>%
   mutate(uf_id = as.character(uf_id),
          mun_id = as.character(mun_id))
 
-# Tendo calculado os indicadores de complexidade, o próximos passo é
+# Tendo calculado os indicadores de complexidade, o próximo passo é
 # calcular indicadores de desenvolvimento (PHDI), de desigualdade (PGI),
 # e de emissão de poluentes (PEII) para cada uma das atividades. Para calcular
 # tais indicadores, é preciso antes ter a matriz S, definida como a matriz

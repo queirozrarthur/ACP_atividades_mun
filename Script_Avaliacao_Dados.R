@@ -15,8 +15,8 @@ library(tidyverse)
 library(ggplot2)
 library(ggpubr)
 
-# Aqui plotaremos alguns gráficos para avaliar a correlação (e não a causalidade)
-# entre os indicadores de complexidade e os demais. Faremos para os produtos
+# Aqui plotaremos alguns gráficos para avaliar a relação entre os
+# indicadores de complexidade e os demais. Faremos para os produtos
 # (atividades CNAE) e para os municípios.
 
 # Para as atividades:
